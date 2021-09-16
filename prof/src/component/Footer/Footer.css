@@ -1,0 +1,149 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 3rem;
+  padding: 40px 80px;
+  padding-bottom: 30px;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.logo-img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: url("../../images/logo.png");
+  background-size: 100px;
+  left: -4rem;
+  top: 3.5rem;
+}
+.footer-logo1 {
+  font-size: 1.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(57, 109, 185);
+  font-weight: 600;
+  position: relative;
+}
+.footer-logo {
+  position: relative;
+  top: -2rem;
+}
+.footer-logo2 {
+  color: rgb(69, 71, 71);
+  font-size: 1.8rem;
+  position: relative;
+
+  font-weight: 600;
+}
+.footer-logo ul {
+  list-style: none;
+  display: flex;
+}
+.footer-logo li a {
+  display: inline-block;
+  width: 40px;
+  padding: 2px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4 px;
+}
+.footer-logo li a:hover {
+  background: rgb(219, 11, 4);
+}
+.footer-logo li a .fa {
+  color: #fff;
+  font-size: 20px;
+}
+.footer-aboutus {
+  width: 40%;
+}
+.footer-aboutus h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.footer-aboutus h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 102px;
+  background: rgb(57, 109, 185);
+}
+.footer-aboutus p {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 15px;
+}
+.footer-quicklinks h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.footer-quicklinks h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 125px;
+  background: rgb(57, 109, 185);
+}
+.footer-quicklinks ul {
+  list-style: none;
+}
+.footer-quicklinks li a {
+  color: #fff;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.footer-quicklinks li a:hover {
+  opacity: 1;
+}
+.copyright {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  left: 30vw;
+  top: 1.4rem;
+  opacity: 0.8;
+}
+@media (max-width: 991px) {
+  .footer-container {
+    margin-right: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer-aboutus {
+    position: relative;
+    top: 1rem;
+  }
+  .footer-quicklinks {
+    position: relative;
+    top: 1rem;
+  }
+  .copyright {
+    position: relative;
+    padding: 8px 40px;
+    left: 10vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .copyright {
+    font-size: 0.6rem;
+  }
+}

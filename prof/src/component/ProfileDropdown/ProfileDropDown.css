@@ -1,0 +1,79 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+.dropdown-container {
+  position: relative;
+  top: 0.5rem;
+  z-index: 100;
+}
+.dropdown-profile {
+  position: relative;
+  width: 50px;
+  color: black;
+  margin-right: 15px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+
+  overflow: hidden;
+  cursor: pointer;
+}
+.dropdown-profile img {
+  position: absolute;
+  top: 0rem;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dropdown-menu {
+  position: absolute;
+  padding: 10px 20px;
+  background: #fff;
+  width: 220px;
+  color: black;
+  top: 5rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0.5rem 0.5rem rgb(34, 34, 34);
+  border: 2px solid black;
+  visibility: hidden;
+  opacity: 0;
+  left: -8vw;
+}
+.dropdown-menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+}
+
+.dropdown-menu ul li {
+  list-style: none;
+  position: relative;
+}
+
+.dropdown-menu ul li {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  padding: 3px;
+  position: relative;
+  top: -1rem;
+  font-family: sans-serif;
+}
+
+.dropdown-menu ul li:nth-child(4) {
+  font-weight: 600;
+  position: relative;
+  top: 0rem;
+}
+.dropdown-menu ul li:hover {
+  font-weight: 560;
+  color: black;
+  cursor: pointer;
+}
+.dropdown-menu.active {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap");
+.aboutUsUpperBody {
+  width: 100%;
+  background: rgb(65, 65, 68);
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutUsText {
+  position: relative;
+  top: 8.5rem;
+}
+.aboutUsText span {
+  font-size: 7rem;
+  font-weight: 500;
+  font-family: "Rampart One", cursive;
+  color: rgb(104, 182, 171);
+}
+
+.aboutUsspan {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+
+  height: 100vh;
+  background: #f1edeb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.as1 {
+  position: relative;
+  font-size: 2rem;
+
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  opacity: 0.8;
+  color: black;
+}
+.aboutuslogo {
+  transform: rotate(90deg);
+  letter-spacing: 2px;
+}
+.aboutuslogo1,
+.aboutuslogo2 {
+  font-size: 5rem;
+  position: relative;
+
+  letter-spacing: 2px;
+  color: rgb(18, 47, 100);
+  font-family: "Rampart One", cursive;
+}
+.aboutuslogo1 {
+  letter-spacing: 2px;
+}
+.aboutUsLowerBody,
+.aboutUsLowerBody1,
+.aboutUsLowerBody2 {
+  width: 100%;
+  text-align: center;
+  height: 80vh;
+  background: #f1edeb;
+}
+.aboutUsLowerBody span {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: "Merriweather", serif;
+}
+.aboutUsContent,
+.aboutUsContent1,
+.aboutUsContent2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutUsAshish {
+  height: 50vh;
+  width: 65%;
+  background: rgb(255, 255, 255);
+  position: relative;
+  top: 5rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.aboutUsAshish p {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: "Archivo Narrow", sans-serif;
+}
+.aboutUsAshish ul {
+  list-style: none;
+}
+.aboutUsAshish ul li:nth-child(2) {
+  font-size: 1.5rem;
+  color: rgb(49, 43, 131);
+}
+.AshishInfo {
+  display: flex;
+  justify-content: space-around;
+}
+.AshishInfo p {
+  font-size: 1.5rem;
+  max-width: 500px;
+  position: relative;
+  left: -6vw;
+  top: 2rem;
+}
+.AshishInfo ul {
+  position: relative;
+  top: 2rem;
+  list-style: none;
+  left: -3vw;
+  font-size: 2rem;
+}
+.AshishInfo ul:hover {
+  cursor: pointer;
+}
+.AshishInfo ul li:nth-child(1) {
+  font-size: 4rem;
+  position: relative;
+  left: -10rem;
+}
+.AshishInfo ul li:nth-child(2) {
+  position: relative;
+  top: -5.3rem;
+  left: -1rem;
+  font-size: 4rem;
+}
+
+@media (max-width: 1150px) {
+  .aboutUsspan {
+    flex-direction: column-reverse;
+  }
+  .aboutuslogo {
+    transform: rotate(3600deg);
+    position: relative;
+    top: 3rem;
+  }
+  .AshishInfo {
+    flex-direction: column;
+  }
+  .AshishInfo p {
+    position: absolute;
+    text-align: center;
+    left: 9vw;
+    top: 8rem;
+    max-width: 400px;
+    margin: 0;
+  }
+  .AshishInfo ul {
+    position: relative;
+    text-align: center;
+    top: 5rem;
+    left: 5rem;
+  }
+}
+@media (max-width: 700px) {
+  .aboutUsAshish {
+    height: 55vh;
+  }
+  .AshishInfo ul {
+    position: relative;
+    text-align: center;
+    top: 6rem;
+    left: 5rem;
+  }
+  .AshishInfo p {
+    position: absolute;
+    text-align: left;
+    left: 5vw;
+    top: 8rem;
+
+    max-width: 400px;
+    margin: 0;
+  }
+}
+@media (max-width: 520px) {
+  .aboutUsText span {
+    font-size: 3.6rem;
+  }
+  .aboutuslogo1,
+  .aboutuslogo2 {
+    font-size: 2.5rem;
+  }
+  .as1 {
+    font-size: 1.2rem;
+  }
+  .aboutUsLowerBody span {
+    font-size: 2.5rem;
+  }
+
+  .aboutUsAshish p {
+    font-size: 1.5rem;
+  }
+  .AshishInfo p {
+    font-size: 1rem;
+    top: 9rem;
+    text-align: cneter;
+  }
+
+  .AshishInfo ul li {
+    position: relative;
+    top: 4rem;
+    left: -10rem;
+  }
+  .AshishInfo ul li:nth-child(2) {
+    position: relative;
+    top: -1.5rem;
+    left: -1rem;
+  }
+}

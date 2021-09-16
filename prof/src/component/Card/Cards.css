@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.card-container{
+    position: relative;
+    top: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    box-shadow: 0.5rem 0.5rem rgb(34, 34, 34);
+    max-width: 400px;
+    width: 100%;
+   
+    position: relative;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #4362c0;
+    
+    margin: 10px;
+    
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.card:hover{
+    
+    box-shadow: 0 0 5px 5px rgb(87, 85, 85);
+    transform: scale(1.03);
+}
+.profile-image{
+    border-radius: 50%;
+    border:5px solid rgb(199, 195, 195);
+    position:relative;
+    left: 7.8rem;
+    top:-3rem;
+
+}
+.profile-name{
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    left: 7rem;
+    top:-2.3rem;
+    color: white;
+    
+}
+.card-main{
+    position: relative;
+    top: -18px;
+    left: -20px;
+    
+}
+.profile-name::after{
+    content:'';
+    display: block;
+    height: 1px;
+    width:6em;
+    background: rgb(76, 177, 207);
+    opacity: 0.3;
+    margin-left: 2px;
+}
+.profile-position{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 4px;
+    text-align: center;
+    position: relative;
+    top: -2rem;
+    left:1.4rem;
+    color: rgb(76, 177, 207);
+}
+.profile-body{
+    margin-top: 10px;
+    font-weight: 500;
+    color: rgb(12, 12, 12);
+    opacity: 0.6;
+    position: relative;
+    overflow: hidden;
+    left:1rem;
+    float: left;
+    text-align: center;
+    padding: 5px;
+}
+.profile-link{
+    position: relative;
+    left:10rem;
+    top: 1.8em;
+    bottom: 0.2em;
+    color: rgb(139, 174, 226);
+}
+.profile-link:hover{
+    text-decoration-line: underline;
+
+}
+.profile-link i{
+    padding: 2px;
+    position: relative;
+    top:1px;
+
+}
+@media(min-width:600px){
+ .card-container{
+     display: flex;
+     justify-content: space-around;
+    
+ }
+}
+@media(max-width:1300px){
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-image{
+         position: relative;
+         left: 7.6rem;
+    }
+    .profile-name{
+        position: relative;
+        left: 6.6rem;
+    }
+    .profile-position{
+       position: relative;
+       left: 0.4rem;
+    }
+    .profile-link{
+        position: relative;
+        top: 0rem;
+        left:9.6rem;
+    }
+    .card{
+        margin-bottom: 2.2rem;
+    }
+    
+}
+@media (max-width:582px)
+{
+    .card{
+        width: 300px;
+    }
+    .profile-name{
+        font-size: 1.5rem;
+        position: relative;
+        left: 5.7rem;
+    }
+    .profile-position{
+        font-size: 1rem;
+        position: relative;
+        left: 1.2rem;
+    }
+    .profile-image{
+        position: relative;
+        left: 6rem;
+        width: 7.2rem;
+
+    }
+    .profile-link{
+        position: relative;
+        left: 7rem;
+    }
+}
+@media (max-width:420px)
+{
+    .card{
+         width: 200px;
+    }
+    .profile-name{
+        font-size: 1rem;
+        position: relative;
+        left: 3.8rem;
+        
+    }
+    .profile-position{
+        font-size: 0.8rem;
+        left: 0.8rem;
+    }
+    .profile-body{
+        font-size: 0.8rem;
+        position: relative;
+        top: -2rem;
+    }
+    .profile-image{
+        position: relative;
+        left: 2.5rem;
+        width: 6.5rem;
+
+    }
+    .profile-link{
+        position: relative;
+        left: 4.5rem;
+    }
+
+}

@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+
+.templatenav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  color: var(--white);
+  background: rgb(65, 65, 68);
+  z-index: 100;
+}
+.template_header {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  background: rgb(65, 65, 68);
+  z-index: 100;
+}
+.template_header span {
+  font-size: 3rem;
+  color: rgb(230, 223, 223);
+  font-weight: 600;
+}
+.templateResearchFaculty {
+  background: rgb(65, 65, 68);
+  position: relative;
+  height: 20rem;
+  width: 100%;
+}
+.templateResearchFaculty p {
+  position: relative;
+  top: 20vh;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  color: white;
+  opacity: 0.8;
+}
+.templatediv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+.templateContent {
+  width: 70vw;
+  min-height: 110vh;
+  position: relative;
+  top: -5rem;
+  bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+
+  text-align: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 5px;
+  background: white;
+}
+.templateContent i {
+  position: relative;
+  top: 7vw;
+
+  left: 3vw;
+  font-size: 1.8rem;
+}
+.spn_domain1 {
+  position: relative;
+  top: 7vw;
+  left: 4vw;
+  float: center;
+
+  font-family: "Arvo", serif;
+  font-size: 1rem;
+  color: #0d533e;
+}
+.spn_domain {
+  position: relative;
+  top: 7vw;
+  left: 4vw;
+  font-size: 1.5rem;
+  color: #095a55;
+  font-weight: bold;
+}
+.templateImage {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  top: 5vw;
+  left: 5vw;
+  background: turquoise;
+}
+.templateContent1 p {
+  position: relative;
+  top: 6vw;
+  left: 5vw;
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Arvo", serif;
+}
+.templateContent2 {
+  max-width: 500px;
+}
+.templateContent2 span {
+  position: relative;
+  top: 7vw;
+  opacity: 0.8;
+
+  font-size: 1.8rem;
+  right: 10vw;
+  font-weight: 600;
+}
+
+.templateContent2 p {
+  position: relative;
+  top: 9vw;
+  right: 3vw;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  opacity: 0.8;
+  text-align: left;
+}
+.templateContent2Links {
+  position: relative;
+  top: 12rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  left: -5vw;
+  color: teal;
+}
+.templateContent2 ul li a {
+  color: thistle;
+}
+.templateContent2 li a:hover {
+  background: transparent;
+}
+.templateContent2 ul {
+  position: relative;
+  top: 15rem;
+  list-style: none;
+}
+.templateContent2 ul li {
+  position: relative;
+  left: -3vw;
+  opacity: 0.8;
+  margin-bottom: 3px;
+  text-align: left;
+  font-weight: 500;
+}
+.templateContent2 ul li a {
+  color: blue;
+  opacity: 1;
+  position: relative;
+  left: 2px;
+  text-decoration: underline;
+}
+.templateReview {
+  width: 30vw;
+  font-size: 4rem;
+  font-family: "Rampart One", cursive;
+  color: rgb(42, 165, 118);
+  height: 30vh;
+  position: sticky;
+
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 15px;
+}
+.rate {
+  position: relative;
+  left: -8vw;
+}
+.rate:not(checked) > input {
+  position: absolute;
+  display: none;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  font-family: sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #ccc;
+}
+.rate:not(checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: rgb(42, 165, 118);
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: rgb(151, 229, 201);
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #7ed8b7;
+}
+.templateTextArea textarea {
+  width: 25%;
+  resize: none;
+  padding-top: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  position: relative;
+  top: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+}
+.templateTextArea {
+  position: relative;
+  margin-left: 7rem;
+}
+.templateSubmit input {
+  position: relative;
+  cursor: pointer;
+  background: #095a55;
+  color: white;
+  border: none;
+  width: 10rem;
+  font-size: 1.2rem;
+  margin-left: 13rem;
+  top: 1rem;
+}
+.templateSubmit input:hover {
+  background: #408682;
+}
+@media (max-width: 1200px) {
+  .templateContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .templateContent1 {
+    position: relative;
+    text-align: center;
+
+    top: -14vw;
+  }
+  .templateContent2 {
+    position: relative;
+    top: -5vw;
+  }
+  .templateContent2 span {
+    position: relative;
+    top: -1vw;
+    left: -10rem;
+    opacity: 0.5;
+  }
+  .templateContent2 p {
+    max-width: 50vw;
+    text-align: left;
+    position: relative;
+    top: 1rem;
+  }
+  .templateContent2Links {
+    position: relative;
+    top: 3rem;
+  }
+  .templateContent2 ul {
+    position: relative;
+    top: 5rem;
+  }
+}

@@ -1,0 +1,70 @@
+.createpost-container{
+    height: 100%;
+    width: 100%;
+}
+.createpost-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createpost-form{
+    width: 50vw;
+    height: 75vh;
+    position: relative;
+    top: -3rem;
+    background: rgb(241, 241, 241);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+
+
+}
+.createpost-form form textarea:nth-child(1){
+    background: white;
+    border-color: transparent;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    top: -3rem;
+    overflow: none;
+    resize: none;
+    outline: none;
+    float: left;
+
+}
+.createpost-form form textarea:nth-child(1):focus{
+    outline: none;
+    resize: none;
+    overflow: none;
+}
+.createpost-form form textarea:nth-child(2){
+    background: white;
+    border-color: transparent;
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    position: relative;
+    top: 2rem;
+    resize: none;
+    outline: none;
+    overflow: none;
+    width: 40vw;
+    outline: none;
+    left: -3vw;
+    height: 15rem;
+}
+.createpost-form button{
+    background: rgb(64, 101, 224);
+    border-color: transparent;
+    border-radius: 5px;
+    width: 10vw;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    top: 3rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.createpost-form button:hover{
+    background: rgb(46, 78, 184);
+}

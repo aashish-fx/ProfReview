@@ -1,0 +1,49 @@
+.modal {
+  position: fixed;
+  width: 90%;
+  left: 5%;
+  top: 20vh;
+  background: white;
+  border-radius: 5px;
+  z-index: 200;
+  box-shadow: 0.5rem 0.5rem rgb(34, 34, 34);
+}
+.modal_header {
+  border-bottom: 2px solid rgb(13, 13, 14);
+}
+.modal_header h1 {
+  font-size: 1.5rem;
+  color: rgb(10, 10, 10);
+  margin: 1rem;
+}
+.modal_content {
+  padding: 1rem;
+}
+.modal_actions {
+  padding: 1rem;
+  text-align: center;
+}
+.modal_actions button {
+  padding: 10px;
+  border-color: transparent;
+  width: 15rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  background: rgb(56, 87, 153);
+  color: white;
+}
+.modal_actions button:hover {
+  cursor: pointer;
+}
+.modal_actions modal_btn__2 {
+  color: rgb(56, 138, 153);
+  background: transparent;
+}
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: 30vw;
+  }
+}

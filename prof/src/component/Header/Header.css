@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --blue: rgb(27, 109, 134);
+  --black: rgb(14, 13, 13);
+  --white: white;
+  --lightblack: rgb(58, 56, 56);
+}
+.dark {
+  --white: rgb(43, 44, 59);
+  --black: rgb(253, 251, 251);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100vw;
+  color: var(--white);
+  position: fixed;
+  z-index: 100;
+}
+.nav-scroll {
+  background-color: var(--white);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  opacity: 2;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+}
+.ulist {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.ulist li a:hover {
+  color: var(--lightblack);
+}
+
+.ulist li:nth-child(1) a:hover {
+  color: rgb(9, 128, 88);
+  transform: scale(1);
+
+  animation-delay: 300ms;
+}
+.ulist li:nth-child(2) a:hover {
+  color: rgb(9, 128, 88);
+  transform: scale(1);
+
+  animation-delay: 300ms;
+}
+.ulist li:nth-child(3) a:hover {
+  color: rgb(9, 128, 88);
+  transform: scale(1);
+
+  animation-delay: 300ms;
+}
+.log {
+  color: var(--black);
+  font-family: "Oswald";
+  margin-top: 1rem;
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  background: rgb(39, 82, 202);
+  padding: 7px;
+
+  width: 8rem;
+
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.log:hover {
+  cursor: pointer;
+  background: rgb(101, 125, 190);
+  color: var(--black);
+}
+.log1 {
+  color: var(--black);
+  font-family: "Oswald";
+  margin-top: 1rem;
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  background: rgb(19, 170, 196);
+  padding: 7px;
+
+  width: 8rem;
+
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.log1:hover {
+  cursor: pointer;
+  background: rgb(164, 205, 212);
+  color: var(--black);
+}
+
+.ulist li {
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  list-style: none;
+  text-decoration: none;
+  animation: link-load 300ms ease-out;
+}
+.ulist li:active {
+  color: rgb(75, 114, 223);
+}
+.ulist li a:nth-child(4):hover {
+  color: black;
+}
+@keyframes link-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.ulist li a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: "Oswald";
+  font-size: 1.8rem;
+  font-weight: 560;
+  display: inline-block;
+}
+.ulist li:nth-child(2) {
+  position: relative;
+  top: 0.3rem;
+}
+
+.ulist li:nth-child(2) a {
+  overflow: hidden;
+}
+
+.logo {
+  padding: 30px;
+  animation: left-load 300ms ease-in 00ms;
+}
+@keyframes left-load {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.logo1 {
+  font-weight: bold;
+  font-size: 35px;
+  color: var(--blue);
+}
+.logo2 {
+  font-weight: bold;
+  font-size: 35px;
+  color: var(--black);
+}
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.themeChange {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.themeChange::before {
+  content: "\f186";
+  color: white;
+  font-family: fontAwesome;
+  font-size: 20px;
+}
+.themeChange.active::before {
+  content: "\f185";
+}
+@media (max-width: 1100px) {
+  .ulist {
+    display: none;
+  }
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(../../images/menu.png);
+    filter: invert(1);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .toggle.active {
+    background: url(../../images/close.png);
+    filter: invert(1);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .ulist.active {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    flex-direction: column;
+    font-family: "Oswald";
+    font-size: 20px;
+  }
+}
+@media (max-width: 370px) {
+  .logo1,
+  .logo2 {
+    font-size: 2rem;
+  }
+}
