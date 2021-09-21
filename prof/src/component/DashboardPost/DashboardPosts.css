@@ -1,0 +1,49 @@
+.dashboardPost {
+  margin: 1rem 0;
+  border: 1px solid #9a7fad;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 50vw;
+  position: relative;
+
+  background: rgb(224, 199, 235);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.post__meta {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #3a3939;
+  margin: 0;
+
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.post__meta span {
+  font-size: 0.8rem;
+  opacity: 1;
+  color: rgb(43, 76, 226);
+}
+.post__title {
+  font-size: 1.7rem;
+  margin: 1rem 0;
+  color: #111011;
+}
+.post__title:hover {
+  cursor: pointer;
+  color: #7f43aa;
+}
+
+.post__actions {
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .post {
+    padding: 0.5rem;
+    width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

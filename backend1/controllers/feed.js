@@ -34,10 +34,11 @@ exports.createPost = (req, res, next) => {
   }
   const title = req.body.title;
   const content = req.body.content;
+  const name = req.body.userName;
   const post = new Post({
     title:title,
     content:content,
-    creator:{name:'ashish'},
+    creator:{name:name},
     date:new Date().toISOString(),
     userId:req.body.userId
   });
@@ -55,7 +56,7 @@ exports.createPost = (req, res, next) => {
     {
       err.statusCode = 500;
     }
-    next(err);
+    
   });
  
 };
@@ -85,7 +86,7 @@ exports.getPost = (req,res,next)=>{
 exports.updatePost = (req,res,next)=>{
   const postId = req.params.postId;
   const errors = validationResult(req);
-  if(!error.isEmpty())
+  if(!errors.isEmpty())
   {
     const error = new Error("Validation failed");
     error.statusCode = 422;
@@ -128,7 +129,7 @@ exports.deletePost = (req,res,next)=>{
     return Post.findByIdAndDelete(postId);
   })
   .then(result=>{
-    res.status(200).json({message:'Post deleted'});
+    res.status(200).json({message:'Post deleted',posts:result});
   })
   .catch(err=>{
     if(!err.statusCode)

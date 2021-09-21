@@ -29,6 +29,12 @@
   position: relative;
   top: 2rem;
 }
+.login1google1 {
+  cursor: pointer;
+  width: 19rem;
+
+  text-align: center;
+}
 
 @media (max-width: 460px) {
   .createFormFill span {
@@ -42,6 +48,13 @@
     border-radius: 5px;
     width: 14rem;
   }
+  .login1google1 {
+    cursor: pointer;
+    width: 14rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
   .createFormFill input:nth-child(2) {
     position: relative;
     left: -1.8rem;

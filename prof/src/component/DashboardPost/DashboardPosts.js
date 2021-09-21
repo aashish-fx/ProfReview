@@ -1,21 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./post.css";
+import "./DashboardPosts.css";
 import Button from "../Button/Button";
 
-const Post = (props) => {
+const DashboardPosts = (props) => {
   const id=props.id+"/post"
+  const deletePostHandler = (event)=>{
+    props.deletePostId(props.id);
+  }
   return (
-    <article className="post">
-      <header className="post__header">
-        <h3 className="post__meta">
-          posted by {props.author}
-          <br></br>
-          <span>{props.date}</span>  
+    <article className="dashboardPost">
+      <header className="dashboardPost__header">
+        <h3 className="dashboardPost__meta">
         </h3>
         <h1 className="post__title">{props.title}</h1>
       </header>
       <div className="post__actions">
+        <Button mode="flat" onClick={deletePostHandler}>Delete</Button>
         <Link to={id}>
           <Button mode="flat">View</Button>
         </Link>
@@ -23,4 +24,4 @@ const Post = (props) => {
     </article>
   );
 };
-export default Post;
+export default DashboardPosts;

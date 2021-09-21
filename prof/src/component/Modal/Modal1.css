@@ -5,7 +5,7 @@
   top: 20vh;
   background: white;
   border-radius: 5px;
-  z-index: 200;
+  z-index: 2000;
   box-shadow: 0.5rem 0.5rem rgb(34, 34, 34);
 }
 .modal_header {
@@ -21,6 +21,16 @@
 }
 .modal_actions {
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+}
+.modal_actions1 {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+
   text-align: center;
 }
 .modal_actions button {
@@ -28,11 +38,24 @@
   border-color: transparent;
   width: 15rem;
   border-radius: 5px;
+
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
-  background: rgb(56, 87, 153);
+  background: rgb(72, 108, 184);
   color: white;
+}
+.modal_actions1 button {
+  padding: 10px;
+  border-color: rgb(72, 108, 184);
+  width: 15rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  background: transparent;
+  color: rgb(72, 108, 184);
 }
 .modal_actions button:hover {
   cursor: pointer;

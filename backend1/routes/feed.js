@@ -34,5 +34,5 @@ router.put('/feed/post/:postId',isAuth,[
 ],
 feedController.updatePost
 )
-router.delete('/feed/post/:postId',isAuth,feedController.deletePost);
+router.delete('/feed/post/:postId',feedController.deletePost);
 module.exports = router;

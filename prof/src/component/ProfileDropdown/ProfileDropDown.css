@@ -32,7 +32,7 @@
   background: #fff;
   width: 220px;
   color: black;
-  top: 5rem;
+  top: 4rem;
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0.5rem 0.5rem rgb(34, 34, 34);
@@ -76,4 +76,21 @@
 .dropdown-menu.active {
   visibility: visible;
   opacity: 1;
+}
+@media (max-width: 1100px) {
+  .dropdown-menu {
+    position: absolute;
+    padding: 10px 20px;
+    background: #fff;
+    width: 220px;
+    color: black;
+    top: -19rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0.5rem 0.5rem rgb(34, 34, 34);
+    border: 2px solid black;
+    visibility: hidden;
+    opacity: 0;
+    left: -8vw;
+  }
 }

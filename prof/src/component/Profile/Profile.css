@@ -40,10 +40,10 @@
   align-items: center;
 }
 .profile-image1 {
-  border-radius: 50%;
-  border: 5px solid rgb(199, 195, 195);
+  width: 12rem;
+  height: 10rem;
   position: relative;
-  top: -2.5rem;
+  top: -1.5rem;
 }
 .profile-data span {
   position: relative;

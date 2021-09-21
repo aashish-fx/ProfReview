@@ -48,12 +48,12 @@ class Template extends Component {
     return (
       <React.Fragment>
         <div className="template_header">
-          <div>
+          <div className="template-header-link1">
             <Link to="/">
               <span>ProfReview</span>
             </Link>
           </div>
-          <div>
+          <div className="template-header-link2">
             <Link to="/search">
               <span>Search</span>
             </Link>
@@ -93,7 +93,7 @@ class Template extends Component {
                   Profile: <a href={this.state.email_id}> {this.state.name}</a>
                 </li>
                 <li>
-                  Research Gate:
+                  google schlr:
                   <a href={this.state.researchgate}>{this.state.name}</a>
                 </li>
                 <li>

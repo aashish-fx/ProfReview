@@ -11,6 +11,8 @@ const transporter = nodemailer.createTransport(sendgridTransport({
     }
 }))
 const User = require('../models/user');
+
+
 exports.signup = (req,res,next)=>{
     const errors = validationResult(req);
     if(!errors.isEmpty()){
@@ -41,16 +43,31 @@ exports.signup = (req,res,next)=>{
             date:date
         
         });
+        crypto.randomBytes(32,(err,buffer)=>{
+            if(err)
+            {
+                const error = new Error('Error accured');
+                error.statusCode(500);
+                throw err;   
+            }
+            const token  = buffer.toString('hex');
+            user.resetToken = token;
+            user.resetTokenExpiration = Date.now()+3600000;
+
+        })
         return user.save();
     })
     .then(result=>{
         res.status(201).json({message:'User Created!',userId: result._id});
 
         return transporter.sendMail({
-            to:email,
+            to:result.email,
             from:'ash569sharma@gmail.com',
-            subject:'Signup succeeded!',
-            html:'<h1>You successfully signed up!</h1>'
+            subject:'Verify your account',
+            html:`
+                    <p>Verify your account</p> 
+                    <p> Click this <a href="http://localhost:3000/login/${result.resetToken}">Link </a> to verify.</p>  
+                `
         });
     });
     })

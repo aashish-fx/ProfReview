@@ -1,97 +1,90 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 
-.card1-container{
+.card1-container {
+  position: relative;
+  height: 400px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card1-track {
+  padding: 10px;
+}
+.card1-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.card1-heading {
+  background: rgb(188, 228, 240);
+  padding: 1rem;
+}
+.card1-main {
+  max-width: 350px;
+  width: 100%;
+  margin: 10px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #4398c0;
+  box-shadow: 0, 5px, 5px, rgb(87, 85, 85);
+  overflow: hidden;
+
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.profile1-name {
+  position: relative;
+  text-align: center;
+  font-family: cursive;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.profile1-name::after {
+  content: "";
+  height: 2px;
+  position: relative;
+  left: -1rem;
+
+  display: block;
+  width: 20rem;
+  opacity: 0.5;
+  background: rgb(137, 130, 238);
+}
+.profile1-position {
+  position: relative;
+  text-align: center;
+  letter-spacing: 4px;
+  color: rgb(53, 48, 53);
+}
+.profile1-body {
+  padding: 5px;
+  text-align: left;
+}
+.card1-slide {
+  top: 0;
+  width: 100%;
+}
+.card1-button {
+  position: absolute;
+  top: 8rem;
+  height: 50px;
+}
+.card1-container.lower {
+  top: -2rem;
+}
+@media (max-width: 420px) {
+  .profile1-name {
+    font-size: 0.8rem;
+  }
+  .profile1-body {
+    font-size: 0.8rem;
     position: relative;
-    height: 400px;
-    width: 100%;
-    
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card1-track{
-    padding: 10px;
-}
-.card1-list{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-.card1-heading{
-    background: rgb(188, 228, 240);
-    padding: 1rem;
-    
-}
-.card1-main{
-    
-    max-width: 350px;
-    width: 100%;
-    margin: 10px;
-    
-    position: relative;
-    
-    display: flex;
-    flex-direction: column;
-    
-    background: #4398c0;
-    box-shadow: 0,5px,5px,rgb(87, 85, 85) ;
-    overflow: hidden;
-    
-    border-radius: 10px;
-    transition: 0.5s;
-}
-.profile1-name{
-    position: relative;
-    text-align: center;
-    font-family: cursive;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    
-}
-.profile1-name::after{
-    content: '';
-    height: 2px;
-    position: relative;
-    left: -1rem;
-    display: block;
-    width: 20rem;
-    opacity: 0.5;
-    background: rgb(137, 130, 238);
-}
-.profile1-position{
-    position: relative;
-    text-align: center;
-    letter-spacing: 4px;
-    color:rgb(53, 48, 53);
-}
-.profile1-body{
-    padding: 5px;
     text-align: left;
-    
-}
-.card1-slide{
-   
-   top: 0;
-   width: 100%;
-}
-.card1-button{
-    position: absolute;
-    top: 8rem;
-    height: 50px;
-
-}
-.card1-container.lower{
-    top:-2rem;
-}
-@media (max-width:420px)
-{
-    .profile1-name{
-        font-size: 0.8rem;
-    }
-    .profile1-body{
-        font-size: 0.8rem;
-        position: relative;
-        text-align: left;
-    }
+  }
 }

@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono|Hammersmith+One);
+
+:root {
+  --blue: rgb(27, 109, 134);
+  --black: rgb(14, 13, 13);
+  --white: white;
+  --lightblack: rgb(58, 56, 56);
+}
+.dark {
+  --white: rgb(43, 44, 59);
+  --black: rgb(253, 251, 251);
+}
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.rating-form {
+  background: var(--white);
+}
+.rating-container h2 {
+  text-align: center;
+  font-family: "Hammersmith One";
+  font-size: 3rem;
+}
+.rating-star {
+  display: flex;
+  flex-direction: row;
+}
+.rating-star-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating-textArea {
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+  top: 1rem;
+  resize: none;
+  padding: 2rem;
+  width: 20vw;
+}
+.rating-btn {
+  border-color: transparent;
+  background: rgb(64, 101, 224);
+  padding: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media (max-width: 420px) {
+  .rating-textArea {
+    width: 8rem;
+    font-size: 0.45rem;
+  }
+  .rating-btn {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+  .rating-star-container h2 {
+    font-size: 1.5rem;
+  }
+}

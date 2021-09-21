@@ -1,693 +1,703 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Raleway:ital,wght@1,100&display=swap');
-.front-part{
-    height: 150%;
-    width: 100%;
-    padding-top: 12vw;
-    background: var(--white);
-    position: relative;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Raleway:ital,wght@1,100&display=swap");
+.front-part {
+  height: 150%;
+  width: 100%;
+  padding-top: 12vw;
+  background: var(--white);
+  position: relative;
 
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
 }
-.front-part1{
-    width: 100%;
-    height: 100%;
-    
-    
-    background: var(--white);
-    
+.front-part1 {
+  width: 100%;
+  height: 100%;
+
+  background: var(--white);
 }
 
-.home{
-    height: 100%;
-    background: var(--white);
-    width: 100%;
-
+.home {
+  height: 100%;
+  background: var(--white);
+  width: 100%;
 }
-:root{
-    --blue: rgb(27, 109, 134);
-    --black: rgb(14, 13, 13); 
-    --white:white;
-    --light-grey:rgb(235, 240, 232);
-    --lightblue:rgb(217, 221, 223);
-    
+:root {
+  --blue: rgb(27, 109, 134);
+  --black: rgb(14, 13, 13);
+  --white: white;
+  --light-grey: rgb(235, 240, 232);
+  --lightblue: rgb(217, 221, 223);
 }
-.dark{
-    --white: rgb(43, 50, 59);
-    --black:rgb(253, 251, 251);
-    --lightblack:rgb(221, 218, 218);
-    z-index: 1;
-    --light-grey:rgb(126, 128, 125);
-    --lightblue:rgb(91, 91, 92);
-    --grey:
+.dark {
+  --white: rgb(43, 50, 59);
+  --black: rgb(253, 251, 251);
+  --lightblack: rgb(221, 218, 218);
+  z-index: 1;
+  --light-grey: rgb(126, 128, 125);
+  --lightblue: rgb(91, 91, 92);
+  --grey: ;
 }
 
-.front-part1_1{
-   height: 70vh;
-   width: 100%;
-   background: var(--white);
-   display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
+.rating-div {
+  width: 50%;
+  height: 40vh;
+  background: var(--white);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5rem;
+
+  box-shadow: 0.5rem 0.5rem rgb(34, 34, 34);
 }
-.front-part1_1 .text1{
-    max-width: 550px;
-    width: 100%;
-    position: relative;
-    top:10vw;
-    color: var(--black);
-    left: 10vw;
-    
-    
+.rating-div-parent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.front-part1_1 {
+  height: 70vh;
+  width: 100%;
+  background: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.front-part1_1 .text1 {
+  max-width: 550px;
+  width: 100%;
+  position: relative;
+  top: 10vw;
+  color: var(--black);
+  left: 10vw;
 }
 
-.btn-para{
-    position: relative;
-    font-size: 2rem;
-    color: var(--black);
-    opacity: 0.6;
-    top: -2rem;
-    left: -3rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 500;
-
+.btn-para {
+  position: relative;
+  font-size: 2rem;
+  color: var(--black);
+  opacity: 0.6;
+  top: -2rem;
+  left: -3rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
 }
 
-.alignbtns{
-    position: relative;
-    top: 10vw;
-    float: right;
-    
+.alignbtns {
+  position: relative;
+  top: 10vw;
+  float: right;
 }
 
-.button-div{
-    display: flex;
-    position: relative;
-    left: -5rem;
-    height: 100%;
-   
-    justify-content: space-between;
-    align-items: center;
+.button-div {
+  display: flex;
+  position: relative;
+  left: -5rem;
+  height: 100%;
+
+  justify-content: space-between;
+  align-items: center;
 }
-.btn1{
-    padding: 10px;
-    border: 1px solid rgb(87, 173, 155);
-    background: transparent;
-    color: rgb(87, 173, 155);
-    border-radius: 20px;
-    font-size: 20px;
-    position: relative;
-    left: -2rem;
-    
+.btn1 {
+  padding: 10px;
+  border: 1px solid rgb(87, 173, 155);
+  background: transparent;
+  color: rgb(87, 173, 155);
+  border-radius: 20px;
+  font-size: 20px;
+  position: relative;
+  left: -2rem;
 }
-.btn2{
-    padding: 10px;
-    border: 1px solid rgb(87, 173, 155);
-    background: transparent;
-    color: rgb(87, 173, 155);
-    border-radius: 20px;
-    font-size: 20px;
-    position: relative;
-    left: -1.5rem;
+.btn2 {
+  padding: 10px;
+  border: 1px solid rgb(87, 173, 155);
+  background: transparent;
+  color: rgb(87, 173, 155);
+  border-radius: 20px;
+  font-size: 20px;
+  position: relative;
+  left: -1.5rem;
 }
-.btn3{
-    padding: 10px;
-    border: 1px solid rgb(87, 173, 155);
-    background: transparent;
-    color: rgb(87, 173, 155);
-    border-radius: 20px;
-    font-size: 20px;
-    position: relative;
-    left: -1rem;
+.btn3 {
+  padding: 10px;
+  border: 1px solid rgb(87, 173, 155);
+  background: transparent;
+  color: rgb(87, 173, 155);
+  border-radius: 20px;
+  font-size: 20px;
+  position: relative;
+  left: -1rem;
 }
-.btn4{
-    padding: 10px;
-    border: 1px solid rgb(87, 173, 155);
-    background: transparent;
-    color: rgb(87, 173, 155);
-    border-radius: 20px;
-    font-size: 20px;
+.btn4 {
+  padding: 10px;
+  border: 1px solid rgb(87, 173, 155);
+  background: transparent;
+  color: rgb(87, 173, 155);
+  border-radius: 20px;
+  font-size: 20px;
 }
 
-.btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover{
-    cursor: pointer;
-    background: rgb(235, 240, 232);
+.btn1:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover {
+  cursor: pointer;
+  background: rgb(235, 240, 232);
 }
-.text1 span{
-    font-size: 3rem;
-    font-weight: 550;
-    font-family: serif;
+.text1 span {
+  font-size: 3rem;
+  font-weight: 550;
+  font-family: serif;
 }
-.text1 p{
-    font-family: cursive;
-    opacity: 0.6;
-    font-size: 1.1rem;
-    position: relative;
-    top: 1rem;
+.text1 p {
+  font-family: cursive;
+  opacity: 0.6;
+  font-size: 1.1rem;
+  position: relative;
+  top: 1rem;
 }
-.text{
-    position: relative;
-    max-width: 850px;
-    z-index: 1;
-    
-    margin-top: -70px;
+.text {
+  position: relative;
+  max-width: 850px;
+  z-index: 1;
+
+  margin-top: -70px;
 }
 
-
-.sp1{
-    margin-top: -5vw;
-    margin-left: 5vw;
-    position: relative;
-    font-size: 80px;
-    font-family: 'Merriweather';
-    font-weight: lighter;
-    color:var(--black);
-    animation: enlarge 400ms ease-in 300ms;
-    animation-fill-mode: forwards;
-    transform: scale(0);
+.sp1 {
+  margin-top: -5vw;
+  margin-left: 5vw;
+  position: relative;
+  font-size: 80px;
+  font-family: "Merriweather";
+  font-weight: lighter;
+  color: var(--black);
+  animation: enlarge 400ms ease-in 300ms;
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 
+@keyframes enlarge {
+  0% {
+    transform: scale3d(0, 0, 0);
+  }
 
-@keyframes enlarge{
-    0%{
-        transform: scale3d(0,0,0);
-    }
-    
-    100%{
-        transform: scale3d(1,1,1);
-    }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
-.sp2{
-    margin-top: 0.5vw;
-    margin-left: 5vw;
-    font-weight: bold;
-    font-size: 83px;
-    color: var(--blue);
-    font-family: 'Merriweather';
-    animation: enlarge 400ms ease-in 300ms;
-    animation-fill-mode: forwards;
-    transform: scale(0);
+.sp2 {
+  margin-top: 0.5vw;
+  margin-left: 5vw;
+  font-weight: bold;
+  font-size: 83px;
+  color: var(--blue);
+  font-family: "Merriweather";
+  animation: enlarge 400ms ease-in 300ms;
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
-.sp3{
-    margin-left: 5rem;
-    font-size: 35px;
-    font-family: 'Raleway';
-    font-weight: 600;
-    color: var(--black);
+.sp3 {
+  margin-left: 5rem;
+  font-size: 35px;
+  font-family: "Raleway";
+  font-weight: 600;
+  color: var(--black);
 }
-.svg{
-    z-index: -1;
-    float: right;
-    
-    margin-top: -5vw;
-    display: flex;
-    
+.svg {
+  z-index: -1;
+  float: right;
+
+  margin-top: -5vw;
+  display: flex;
 }
 
-
-@keyframes bottomleft{
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
+@keyframes bottomleft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.front-part1-headline{
-    text-align: left;
-    padding: 10px;
-    font-weight: bold;
-    position: relative;
-    top: 3rem;
-    
-    font-family: 'Merriweather';
-    font-size: 3.5rem;
-    color: var(--black);
+.front-part1-headline {
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+  position: relative;
+  top: 3rem;
+
+  font-family: "Merriweather";
+  font-size: 3.5rem;
+  color: var(--black);
 }
-.front-part1-headline::after{
-    content:'';
-    height: 1.5px;
-    width:26rem;
-    background: var(--black);
-    display: block;
-    position: relative;
-    top: 3px;
+.front-part1-headline::after {
+  content: "";
+  height: 1.5px;
+  width: 26rem;
+  background: var(--black);
+  display: block;
+  position: relative;
+  top: 3px;
 }
 
-.front-part1-cards{
-    display: flex;
-    justify-content: space-around;
-    
-    width: 100%;
-    position: relative;
-    top: 1rem;
-    
-}
-.front-part2{
-    margin-top: 10rem;
-}
-.front-part2-headline{
-    float: right;
-    position: relative;
-    right: 0.5rem;
-    top: 2.5rem;
-    font-size: 3.5rem;
-    font-family: 'Merriweather';
-    color: var(--black);
+.front-part1-cards {
+  display: flex;
+  justify-content: space-around;
 
+  width: 100%;
+  position: relative;
+  top: 1rem;
 }
-.front-part2-headline::after{
-    content:'';
-    height: 1.5px;
-    right:2.2rem;
-    width:23rem;
-    background: var(--black);
-    display: block;
-    position: relative;
-    top: 3px;
+.front-part2 {
+  margin-top: 10rem;
 }
-.front-part2-cards{
-    position: relative;
-    top:8rem;
+.front-part2-headline {
+  float: right;
+  position: relative;
+  right: 0.5rem;
+  top: 2.5rem;
+  font-size: 3.5rem;
+  font-family: "Merriweather";
+  color: var(--black);
 }
-.front-part2-para{
-    position: relative;
-    top: 12rem;
-    
-    text-align: center;
-    color: var(--black);
-    font-family: 'Raleway';
-    font-weight: bold;
-    font-size: 3rem;
+.front-part2-headline::after {
+  content: "";
+  height: 1.5px;
+  right: 2.2rem;
+  width: 23rem;
+  background: var(--black);
+  display: block;
+  position: relative;
+  top: 3px;
+}
+.front-part2-cards {
+  position: relative;
+  top: 8rem;
+}
+.front-part2-para {
+  position: relative;
+  top: 12rem;
 
+  text-align: center;
+  color: var(--black);
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 3rem;
 }
-.front-part2-cards::before{
-    content: '';
+.front-part2-cards::before {
+  content: "";
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 23rem;
+  background: var(--black);
+  top: 2rem;
+}
+.front-part2-cards::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 45rem;
+  float: right;
+  background: var(--black);
+  top: -23.6rem;
+}
+
+@media (max-width: 1500px) {
+  .front-part2-cards::before {
+    content: "";
     display: block;
     position: relative;
     height: 2px;
-    width: 23rem;
+    width: 0;
     background: var(--black);
     top: 2rem;
-}
-.front-part2-cards::after{
-    content: '';
+  }
+  .front-part2-cards::after {
+    content: "";
     display: block;
     position: relative;
     height: 2px;
-    width: 45rem;
+    width: 0;
     float: right;
     background: var(--black);
     top: -48.6rem;
-}
-
-@media (max-width:1500px){
-    .front-part2-cards::before{
-        content: '';
-        display: block;
-        position: relative;
-        height: 2px;
-        width: 0;
-        background: var(--black);
-        top: 2rem;
-    }
-    .front-part2-cards::after{
-        content: '';
-        display: block;
-        position: relative;
-        height: 2px;
-       width: 0;
-        float: right;
-        background: var(--black);
-        top: -48.6rem;
-    }
-    .front-part1_1{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .front-part1_1 .text1{
-        position: relative;
-        top: 10vw;
-    }
-}
-
-@media (max-width:1500px)
-{
-    .front-part1_1{
-        display: flex;
-        flex-direction: column;
-    }
-    .alignbtns{
-        position: relative;
-        top: 7vw;
-    }
-    .button-div{
-        position: relative;
-        left: 0;
-        top: 1.1vw;
-    }
-    .btn-para{
-        position: relative;
-        text-align: center;
-        top: 0.5vw;
-    }
-    .front-part1_1 .text1{
-        position: relative;
-        top: 19vw;
-        left: 0;
-        max-width: 1000px;
-    }
-  
-}
-@media (max-width:1200px){
-     .front-part{
-          font-size: 5px;
-
-         flex-direction:column-reverse;
-     }   
-     
-     .text{
-         top: 10rem;
-     }
-     .front-part1{
-         position: relative;
-         top: 10rem;
-     }
-    
-     .front-part1-cards{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-    }
-    .front-part2-headline{
-        position: relative;
-        top: 6rem;
-    }
-    
-    .alignbtns{
-        position: relative;
-        top: 0;
-    }
-    .button-div{
-        position: relative;
-        left: 0;
-        top: 9.1vw;
-    }
-    .btn-para{
-        position: relative;
-        text-align: center;
-        top: 7.2vw;
-    }
-    .front-part1_1 .text1{
-        position: relative;
-        top: 25vw;
-        left: 0;
-    }
-    .text1 span{
-        margin-left: 10px;
-    }
-    
-    
-}
-@media (max-width:900px){
-    .front-part1_1 .text1{
-        position: relative;
-        top: 38vw;
-    }
-    .btn-para{
-        position: relative;
-        top: 16vw;
-    }
-    .button-div{
-        position: relative;
-        top: 18vw;
-    }
-
-
-}
-@media (max-width:700px)
-{
-    .sp1{
-        font-size: 70px;
-    }
-    .sp2{
-        font-size: 75px;
-    }
-    .sp3{
-        font-size: 28px;
-        
-
-    }
-    .svg{
-        width: 30rem;
-    }
-    .front-part1-headline{
-        font-size: 3rem;
-    }
-    .front-part1-headline::after{
-        content:'';
-        height: 1.5px;
-        width:23rem;
-        background: var(--black);
-        display: block;
-        position: relative;
-        top: 3px;
-    }
-    .text1 span{
-       font-size: 2.5rem;
-       position: relative;
-       top: 3rem;
-       
-    }
-    .text1 p{
-        position: relative;
-        top: 3.3rem;
-    }
-    .front-part2-headline{
-        font-size: 3rem;
-    }
-    .front-part2-headline::after{
-        content:'';
-        height: 1.5px;
-        right:2.2rem;
-        width:20rem;
-        background: var(--black);
-        display: block;
-        position: relative;
-        top: 3px;
-    }
-    .front-part2-para{
-        font-size: 2rem;
-    }
-    .button-div{
-        position: relative;
-        left: 1rem;
-    }
-   
-}
-@media (max-width:582px)
-{
-    .svg{
-        width: 420px;
-        
-    }
-    .sp1{
-        font-size: 3.3rem;
-    }
-    .sp2{
-        font-size: 3rem;
-    }
-    .sp3{
-        font-size: 1.3rem;
-        position: relative;
-        left: -2rem;
-    }
-    .front-part1-headline{
-        font-size: 2.6rem;
-    }
-    .front-part1-headline::after{
-        content:'';
-        height: 1.5px;
-        width:20rem;
-        background: var(--black);
-        display: block;
-        position: relative;
-        top: 3px;
-    }
-    .text1 span{
-        font-size: 1.5rem;
-        position: relative;
-        text-align: center;
-        left: 2vw;
-        max-width: 300px;
-    }
-    .text1 p{
-        font-size: 0.7rem;
-        position: relative;
-        top: 4rem;
-        text-align: center;
-    }
-    .btn-para{
-        position: relative;
-        top: -2rem;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        font-size: 2.3rem;
-        left: 0.4rem;
   }
-  .button-div{
-      position: relative;
-      font-size: 2rem;
-      top: -1rem;
+  .front-part1_1 {
+    display: flex;
+    flex-direction: column;
   }
-  .btn1,.btn2,.btn3,.btn4{
-      padding: 3px;
-      margin: 0;
-      font-size: 1.1rem;
+  .front-part1_1 .text1 {
+    position: relative;
+    top: 10vw;
   }
-  .front-part2{
+}
+
+@media (max-width: 1500px) {
+  .front-part1_1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .alignbtns {
+    position: relative;
+    top: 7vw;
+  }
+  .button-div {
+    position: relative;
+    left: 0;
+    top: 1.1vw;
+  }
+  .btn-para {
+    position: relative;
+    text-align: center;
+    top: 0.5vw;
+  }
+  .front-part1_1 .text1 {
+    position: relative;
+    top: 19vw;
+    left: 0;
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1200px) {
+  .front-part {
+    font-size: 5px;
+
+    flex-direction: column-reverse;
+  }
+
+  .text {
+    top: 10rem;
+  }
+  .front-part1 {
+    position: relative;
+    top: 10rem;
+  }
+
+  .front-part1-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .front-part2-headline {
+    position: relative;
+    top: 6rem;
+  }
+
+  .alignbtns {
+    position: relative;
+    top: 0;
+  }
+  .button-div {
+    position: relative;
+    left: 0;
+    top: 9.1vw;
+  }
+  .btn-para {
+    position: relative;
+    text-align: center;
+    top: 7.2vw;
+  }
+  .front-part1_1 .text1 {
+    position: relative;
+    top: 25vw;
+    left: 0;
+  }
+  .text1 span {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 950px) {
+  .front-part1_1 .text1 {
+    position: relative;
+    top: 38vw;
+  }
+  .front-part1_1 .text1 span {
+    font-size: 1.6rem;
+  }
+  .btn-para {
+    position: relative;
+    top: 16vw;
+  }
+  .rating-div-parent {
+    position: relative;
+    top: 8rem;
+  }
+  .button-div {
+    position: relative;
+    top: 18vw;
+  }
+}
+@media (max-width: 700px) {
+  .sp1 {
+    font-size: 70px;
+  }
+  .sp2 {
+    font-size: 75px;
+  }
+  .sp3 {
+    font-size: 28px;
+  }
+  .svg {
+    width: 30rem;
+  }
+  .front-part1-headline {
+    font-size: 3rem;
+  }
+  .front-part1-headline::after {
+    content: "";
+    height: 1.5px;
+    width: 23rem;
+    background: var(--black);
+    display: block;
+    position: relative;
+    top: 3px;
+  }
+  .text1 span {
+    font-size: 2.5rem;
+    position: relative;
+    top: 3rem;
+  }
+  .text1 p {
+    position: relative;
+    top: 3.3rem;
+  }
+  .front-part2-headline {
+    font-size: 3rem;
+  }
+  .front-part2-headline::after {
+    content: "";
+    height: 1.5px;
+    right: 2.2rem;
+    width: 20rem;
+    background: var(--black);
+    display: block;
+    position: relative;
+    top: 3px;
+  }
+  .front-part2-para {
+    font-size: 2rem;
+  }
+  .button-div {
+    position: relative;
+    left: 1rem;
+  }
+}
+@media (max-width: 582px) {
+  .svg {
+    width: 420px;
+  }
+  .sp1 {
+    font-size: 3.3rem;
+  }
+  .sp2 {
+    font-size: 3rem;
+  }
+  .sp3 {
+    font-size: 1.3rem;
+    position: relative;
+    left: -2rem;
+  }
+  .front-part1-headline {
+    font-size: 2.6rem;
+  }
+  .front-part1-headline::after {
+    content: "";
+    height: 1.5px;
+    width: 20rem;
+    background: var(--black);
+    display: block;
+    position: relative;
+    top: 3px;
+  }
+  .text1 span {
+    font-size: 1.5rem;
+    position: relative;
+    text-align: center;
+    left: 2vw;
+    max-width: 300px;
+  }
+  .text1 p {
+    font-size: 0.7rem;
+    position: relative;
+    top: 4rem;
+    text-align: center;
+  }
+  .btn-para {
+    position: relative;
+    top: -2rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2.3rem;
+    left: 0.4rem;
+  }
+  .button-div {
+    position: relative;
+    font-size: 2rem;
+    top: -1rem;
+  }
+  .btn1,
+  .btn2,
+  .btn3,
+  .btn4 {
+    padding: 3px;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .front-part2 {
     position: relative;
     top: -6rem;
-}
-.front-part2-headline{
+  }
+  .front-part2-headline {
     font-size: 2rem;
     position: relative;
     top: 1rem;
-    
-}
-.front-part2-headline::after{
-    content:'';
+  }
+  .front-part2-headline::after {
+    content: "";
     height: 1.5px;
-    width:10rem;
+    width: 10rem;
     background: var(--black);
     display: block;
     right: 0rem;
     position: relative;
     top: 3px;
-}
-.front-part2-para{
+  }
+  .front-part2-para {
     position: relative;
-        top: 7rem;
-        max-width: 100%;
-        font-size: 2rem;
-}
-.front-part2-cards{
+    top: 7rem;
+    max-width: 100%;
+    font-size: 2rem;
+  }
+  .front-part2-cards {
     position: relative;
-    
+  }
 }
-}
-@media (max-width:420px)
-{
-    .svg{
-        width: 280px;
-        position: relative;
-        top: -2rem;
-    }
-    .text{
-        position: relative;
-        top: 0rem;
-    }
-    .sp1{
-        font-size: 2rem;
-        position: relative;
-        
-    }
-    .sp2{
-        font-size: 2rem;
-    }
-    .sp3{
-        font-size: 1rem;
-        position: relative;
-        left: -3rem;
-    }
-    .front-part1{
-        position: relative;
-        top: 0;
-    }
-    .front-part1-headline{
-        font-size: 1.8rem;
-    }
-    .front-part1-headline::after{
-        content:'';
-        height: 1.5px;
-        width:15rem;
-        background: var(--black);
-        display: block;
-        position: relative;
-        top: 3px;
-    }
-    
-    .text1 span{
-        font-size: 1rem;
-        position: relative;
-        text-align: center;
-        left: 2vw;
-        max-width: 300px;
-    }
-    .text1 p{
-        font-size: 1rem;
-        position: relative;
-        top: 4rem;
-        text-align: center;
-    }
-    .btn-para{
-          position: relative;
-          top: -2rem;
-          text-align: center;
-          margin: 0;
-          padding: 0;
-          font-size: 1.8rem;
-          left: 0.4rem;
-    }
-    .button-div{
-        position: relative;
-        font-size: 1rem;
-        top: -1rem;
-    }
-    .btn1,.btn2,.btn3,.btn4{
-        padding: 3px;
-        margin: 0;
-        font-size: 0.8rem;
-    }
-    .front-part2{
-        position: relative;
-        top: -6rem;
-    }
-    .front-part2-headline{
-        font-size: 2rem;
-        position: relative;
-        top: 1rem;
-        
-    }
-    .front-part2-headline::after{
-        content:'';
-        height: 1.5px;
-        width:14rem;
-        background: var(--black);
-        display: block;
-        right: 0rem;
-        position: relative;
-        top: 3px;
-    }
-    .front-part2-para{
-        position: relative;
-        top: 4.5rem;
-        max-width: 100%;
-        font-size: 2rem;
-    }
-    .front-part2-cards{
-        position: relative;
-        top: 2rem;
-    }
+@media (max-width: 420px) {
+  .svg {
+    width: 280px;
+    position: relative;
+    top: -2rem;
+  }
+  .front-part1_1 .text1 span {
+    font-size: 0.96rem;
+    position: relative;
+    text-align: center;
+  }
+  .text {
+    position: relative;
+    top: 0rem;
+  }
+  .alignbtns {
+    position: relative;
+    top: -4rem;
+  }
+  .rating-div-parent {
+    position: relative;
+    top: -5rem;
+  }
+  .rating-div {
+    font-size: 1rem;
+  }
+  .btn-para {
+    position: relative;
+    top: 0rem;
+  }
+  .sp1 {
+    font-size: 2rem;
+    position: relative;
+  }
+  .sp2 {
+    font-size: 2rem;
+  }
+  .sp3 {
+    font-size: 1rem;
+    position: relative;
+    left: -3rem;
+  }
+  .front-part1 {
+    position: relative;
+    top: 0;
+  }
+  .front-part1-headline {
+    font-size: 1.8rem;
+  }
+  .front-part1-headline::after {
+    content: "";
+    height: 1.5px;
+    width: 15rem;
+    background: var(--black);
+    display: block;
+    position: relative;
+    top: 3px;
+  }
+
+  .text1 p {
+    font-size: 1rem;
+    position: relative;
+    top: 4rem;
+    text-align: center;
+  }
+  .btn-para {
+    position: relative;
+    top: -0.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    left: 0.4rem;
+  }
+  .button-div {
+    position: relative;
+    font-size: 1rem;
+    top: -1rem;
+  }
+  .btn1,
+  .btn2,
+  .btn3,
+  .btn4 {
+    padding: 3px;
+    margin: 0;
+    font-size: 0.73rem;
+  }
+  .front-part2 {
+    position: relative;
+    top: -6rem;
+  }
+  .front-part2-headline {
+    font-size: 2rem;
+    position: relative;
+    top: 1rem;
+  }
+  .front-part2-headline::after {
+    content: "";
+    height: 1.5px;
+    width: 14rem;
+    background: var(--black);
+    display: block;
+    right: 0rem;
+    position: relative;
+    top: 3px;
+  }
+  .front-part2-para {
+    position: relative;
+    top: 4.5rem;
+    max-width: 100%;
+    font-size: 1.05rem;
+  }
+  .front-part2-cards {
+    position: relative;
+    top: 2rem;
+  }
 }

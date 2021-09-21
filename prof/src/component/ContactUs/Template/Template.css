@@ -171,41 +171,7 @@
   text-align: center;
   margin-left: 15px;
 }
-.rate {
-  position: relative;
-  left: -8vw;
-}
-.rate:not(checked) > input {
-  position: absolute;
-  display: none;
-}
-.rate:not(:checked) > label {
-  float: right;
-  width: 1em;
-  font-family: sans-serif;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 2.5rem;
-  color: #ccc;
-}
-.rate:not(checked) > label:before {
-  content: "★ ";
-}
-.rate > input:checked ~ label {
-  color: rgb(42, 165, 118);
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-  color: rgb(151, 229, 201);
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-  color: #7ed8b7;
-}
+
 .templateTextArea textarea {
   width: 25%;
   resize: none;
@@ -273,5 +239,56 @@
   .templateContent2 ul {
     position: relative;
     top: 5rem;
+  }
+}
+@media (max-width: 530px) {
+  .template-header-link1 span {
+    font-size: 1.5rem;
+  }
+  .template-header-link2 span {
+    font-size: 1.5rem;
+  }
+  .templateResearchFaculty p {
+    font-size: 2rem;
+  }
+  .templateContent1 img {
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+    left: 0;
+    top: -1rem;
+    border-radius: 5px;
+  }
+  .templateContent1 p {
+    font-size: 1.1rem;
+    position: relative;
+    left: 0;
+  }
+  .templateContent1 span {
+    font-size: 1.1rem;
+    position: relative;
+    left: 0;
+  }
+  .templateContent1 .spn_domain1 {
+    font-size: 0.85rem;
+  }
+  .templateContent2 span {
+    font-size: 1.1rem;
+    position: relative;
+    left: 0;
+    top: 0.6rem;
+  }
+  .templateContent2 p {
+    font-size: 0.6rem;
+    position: relative;
+    left: 1rem;
+  }
+  .templateContent2Links {
+    font-size: 1.2rem;
+  }
+  .templateContent2 ul li {
+    position: relative;
+    left: 0rem;
+    font-size: 0.9rem;
   }
 }

@@ -1,8 +1,12 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './CreateAccount.css';
 import useInput from '../../Hooks/use-input';
 import {Link} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import {GoogleLogin} from 'react-google-login';
 const CreateAccount = (props)=>{
+  const [data,setData] = useState([]);
+  let history = useHistory();
   const {value:enteredName,
     isValid:enterednameIsValid,
      hasError:inputHasError,
@@ -31,9 +35,17 @@ const {value:enteredEmail,
              reset:resetPasswordInput1} = useInput((value)=>value.trim().length>=8);  
      
    const formsubmitHandler = (event)=>{
+    props.google(true);
      event.preventDefault();
      console.log(enteredEmail);
              props.onsignup(event,{email:enteredEmail,password:enteredPassword,name:enteredName,confirmPassword:enteredPassword1});
+    }
+    const handleLogin = (res)=>{
+      props.google(res);
+  
+    }
+    const hello = ()=>{
+      console.log("hi");
     }
   return  (
     <div className="login1-Container">
@@ -43,9 +55,16 @@ const {value:enteredEmail,
     <div className="login1FormContainer">
         <div className="login1Form">
             <form onSubmit={formsubmitHandler}>
-                <div className="login1facebook"> <a href="/" className='social'>  <i className="fa fa-facebook"></i><span>Continue with Facebook</span></a></div>
-                <div className="login1google">   <a href="/" className='social'>  <i className="fa fa-google"></i></a><span>Continue with Google</span></div>
-                <div className="login1github"><a href="/" className='social'>  <i className="fa fa-github"></i></a><span>Continue with Github</span></div>
+                <GoogleLogin
+                    clientId="224215270537-dtgav02548e8bbrlbltujslkf9c504o9.apps.googleusercontent.com"
+                    buttonText="Log in with Google"
+                    onClick = {hello}
+                    onSuccess={handleLogin}
+                    onFailure={handleLogin}
+                    cookiePolicy={'single_host_origin'}
+                    className = "login1google1"
+                />
+               
                  <div className="login1Text"><span>or enter your email address</span></div>
                  <div className="createFormFill">
                  <span>Full Name</span>

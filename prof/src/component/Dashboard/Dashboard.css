@@ -1,59 +1,62 @@
-.dashboard-container{
-    width: 100%;
-    min-height: 130vh;
-    background: #f1edeb;
+.dashboard-container {
+  width: 100%;
+  min-height: 130vh;
+  background: #f1edeb;
 }
-.dashboard-content{
-    display: flex;
-    justify-content: space-between;
-    
-    
+.dashboard-content {
+  display: flex;
+  justify-content: space-between;
 }
-.dashboard-text{
-    font-size: 2rem;
-    font-weight: 700;
-    opacity: 0.8;
-    position: relative;
-    left: 2vw;
-    top: 1rem;
+.dashboard-text {
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0.8;
+  position: relative;
+  left: 2vw;
+  top: 1rem;
 }
-.dashboard-box-div{
-    position: relative;
-    top: 1rem;
-    left: -5vw;
+.dashboard-box-div {
+  position: relative;
+  top: 1rem;
+  left: -5vw;
 }
-.dashboard-box-div span{
-    font-size: 1.5rem;
-    font-weight: 700;
+.dashboard-box-div span {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
-.dashboard-box{
-    width: 65vw;
-    height: 75vh;
-   background: rgb(241, 241, 241);
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+.dashboard-box {
+  width: 65vw;
+  height: 75vh;
+  background: rgb(241, 241, 241);
+  overflow: scroll;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.dashboard-box-text,.dashboard-box-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 15rem;
-    font-size: 1.5rem;
+.dashboard-box-text,
+.dashboard-box-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  font-size: 1.5rem;
 }
-.dashboard-box-button{
-    position: relative;
-    top: 17rem;
+.dashboard-box-button {
+  position: relative;
+  margin-left: 2rem;
 }
-.dashboard-box-button button{
-    width: 15vw;
-    padding: 10px;
-    border-color: transparent;
-    background: rgb(64, 101, 224);
-    color: white;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
+.dashboard-box-button button {
+  width: 15vw;
+  padding: 10px;
+  border-color: transparent;
+  background: rgb(64, 101, 224);
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.dashboard-box-button button:hover{
-    background: rgb(46, 78, 184);
+.dashboard-box-button button:hover {
+  background: rgb(46, 78, 184);
 }

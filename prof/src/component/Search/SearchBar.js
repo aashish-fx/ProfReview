@@ -10,9 +10,11 @@ function SearchBar({ placeholder }) {
   const [wordEntered, setWordEntered] = useState("");
   const [isValid, setIsValid] = useState(false);
   const [postLoading, setPostLoading] = useState(true);
+  let domainArray = [];
   let data = [];
   let newFilter = [];
   let v = [];
+  let domainResult = [];
   fetch("http://localhost:4000/search")
     .then((res) => {
       return res.json();
@@ -31,10 +33,12 @@ function SearchBar({ placeholder }) {
   const handleFilter = (event) => {
     const searchWord = event.target.value;
     setWordEntered(searchWord);
-
+     console.log(data,"ashish")
     for (let i in data) {
       console.log(data[i], "s");
       newFilter = data[i].map((inner) => {
+        console.log(inner.domain.split("\n"));
+        domainArray = (inner.domain.split("\n"));
         if (
           inner.college
             .toLowerCase()
@@ -43,20 +47,44 @@ function SearchBar({ placeholder }) {
         ) {
           setIsValid(true);
           return { ...inner };
-        } else {
-          setIsValid(false);
+        } 
+        
+        else{
+          domainResult = (domainArray.map(element=>{
+            if(element.toLowerCase().trim().includes(searchWord.toLowerCase().trim()))
+            {
+              console.log(inner,"domain Found",element);
+              
+              
+              return {...inner};
+            }
+          }))
+          console.log(domainResult)
+          for(i in domainResult)
+          {
+            if(domainResult[i]!==undefined)
+            {
+              setIsValid(true);
+              return {...inner};
+               
+            }
+          }
+          
         }
+          /*for(i in domainArray)
+          {*/
+             
+          
+        
       });
+      
       setPostLoading(false);
-
+      
       console.log(newFilter, "/");
-
-      //return value.title.toLowerCase().includes(searchWord.toLowerCase());
     }
     v = newFilter.map((data) => {
       return { ...data };
     });
-    // console.log(v, "ashish");
     if (searchWord === "") {
       setFilteredData([]);
     } else {
@@ -90,20 +118,24 @@ function SearchBar({ placeholder }) {
         </div>
         <section className="searchFeed">
           {postLoading && <span>Welcome To ProReviews</span>}
-          {!postLoading && (
+          {isValid && (
             <Paginator>
               {filteredData.map((result) => {
-                // console.log(result,'**')
-                return (
-                  <AllProfile
-                    image={result.image}
-                    name={result.name}
-                    college={result.college}
-                    breif={result.breif}
-                    id={result._id}
-                    key={result._id}
-                  />
-                );
+                console.log(result.name,'**')
+                if(result.name!==undefined)
+                {
+                  return (
+                    <AllProfile
+                      image={result.image}
+                      name={result.name}
+                      college={result.college}
+                      breif={result.breif}
+                      id={result._id}
+                      key={result._id}
+                    />
+                  );
+                }
+                
               })}
             </Paginator>
           )}

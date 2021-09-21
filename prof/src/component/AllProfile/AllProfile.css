@@ -59,3 +59,31 @@
     align-items: center;
   }
 }
+
+@media (max-width: 450px) {
+  .AllProfile_part2 {
+    text-align: center;
+    position: relative;
+    max-width: 40vw;
+    font-family: monospace;
+    font-size: 0.8rem;
+  }
+  .AllProfile_part2 p {
+    font-size: 1.2rem;
+    opacity: 0.6;
+    position: relative;
+    top: -1rem;
+    font-family: fantasy;
+  }
+  .AllProfile_part2 button {
+    padding: 8px;
+    border-radius: 6px;
+    border-color: transparent;
+    font-size: 0.7rem;
+  }
+  .AllProfile_img img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10px;
+  }
+}

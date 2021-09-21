@@ -32,7 +32,7 @@ const Cards = ()=>{
              <p className='profile-body'>My broad field of research is nonlinear differential equations. Recently my work is focussed on dynamical
               systems governed by nonlinear fractional differential and differential - difference equations.
                </p>
-               <Link to="613899d4114c963c8c2eb4f1">
+               <Link to="6142ed78da15434e486d514a">
              <a href='/' className='profile-link'>for details<i class="fa fa-external-link"  aria-hidden="true"></i></a>
              </Link>  
          </div>
@@ -43,11 +43,11 @@ const Cards = ()=>{
          </div>
          <div className='card-main'>
              <h1 className='profile-name'>Dr. P. Victer</h1>
-             <p className='profile-position'>Researche Teacher</p>
+             <p className='profile-position'>Researche Faculty</p>
              <p className='profile-body'>DR. P. Victer Paul is working in the fields of Optimization 
              algorithms, Cloud Computing and Data Analytics.
                </p>
-               <Link to="61389b088790fd3f447e02ac">
+               <Link to="6142eea1da15434e486d5150">
              <a href='/' className='profile-link'>for details<i class="fa fa-external-link"  aria-hidden="true"></i></a>  
              </Link>         
          </div>

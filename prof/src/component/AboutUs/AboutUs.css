@@ -80,7 +80,7 @@
 }
 .aboutUsAshish {
   height: 50vh;
-  width: 65%;
+  width: 55%;
   background: rgb(255, 255, 255);
   position: relative;
   top: 5rem;
@@ -180,7 +180,7 @@
     margin: 0;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .aboutUsText span {
     font-size: 3.6rem;
   }
@@ -194,24 +194,40 @@
   .aboutUsLowerBody span {
     font-size: 2.5rem;
   }
-
+  .aboutUsAshish {
+    height: 50vh;
+  }
   .aboutUsAshish p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .aboutUsAshish ul li:nth-child(2) {
+    font-size: 1.2rem;
   }
   .AshishInfo p {
     font-size: 1rem;
-    top: 9rem;
-    text-align: cneter;
+    top: 7rem;
+    text-align: left;
   }
 
-  .AshishInfo ul li {
+  .AshishInfo ul li i {
     position: relative;
-    top: 4rem;
-    left: -10rem;
+    top: 2rem;
+    left: 0rem;
+    font-size: 3rem;
+  }
+  .AshishInfo ul li i:nth-child(1) {
+    position: relative;
+    top: 2rem;
+  }
+  .AshishInfo ul li:nth-child(1) {
+    font-size: 4rem;
+    position: relative;
+    left: -9rem;
   }
   .AshishInfo ul li:nth-child(2) {
     position: relative;
-    top: -1.5rem;
+    top: -5.3rem;
     left: -1rem;
+    font-size: 4rem;
   }
 }

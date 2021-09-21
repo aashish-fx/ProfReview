@@ -1,0 +1,7 @@
+{
+    "env":{
+        "MONGO_USER":"dbUser2",
+        "MONGO_PASSWORD":"dbUser2",
+        "MONGO_DEFAULT_DATABASE":"test?retryWrites=true&w=majority"
+    }
+}

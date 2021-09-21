@@ -3,14 +3,19 @@ import Header from './Header/Header';
 import './Main.css';
 import Cards from './Card/Cards';
 import Svg from './svg';
+import { Link } from 'react-router-dom';
 import Cards1 from './Card/Cards1';
 import Footer from './Footer/Footer';
+import Rating from '../component/Rating/Rating';
 const Main = (props)=>{
   let body = useRef();
-  const userName = localStorage.getItem('userName');
+  
+  const buttonHandler = (event)=>{
+      console.log(event.target);
+  }
   return <div className='home' ref={body}>
-
-     <Header  body = {body} onLogout = {props.onLogout} isAuth={props.isAuth} userName={userName}/>
+       
+     <Header  body = {body} onLogout = {props.onLogout} isAuth={props.isAuth} userName={props.userName} url = {props.url}/>
      <div className='front-part'>
       
           <div className='text'>
@@ -43,18 +48,23 @@ const Main = (props)=>{
       <div className="alignbtns">
         <p className="btn-para">Most Visited Topic Page</p>
         <div className="button-div">
-        <button className="btn1">Physics</button>
-        <button className="btn2">Maths</button>
-        <button className="btn3">Machine learning</button>
-        <button className="btn4">Artificial Intelligence</button>
+        <Link to="/search"><button className="btn1" onClick={buttonHandler} >Cloud</button></Link>
+        <Link to="/search"><button className="btn2" onClick={buttonHandler}>Graph theory</button></Link>
+        <Link to="/search"><button className="btn3" onClick={buttonHandler}>Machine learning</button></Link>
+        <Link to="/search"><button className="btn4" onClick={buttonHandler}>Artificial Intelligence</button></Link>
         
         </div>
       </div>
      </div>
+     <div className="rating-div-parent">
+        <div className="rating-div">
+            <Rating isAuth = {props.isAuth} rating = {props.rating} body={body}/>
+        </div>
+     </div>
      <div className='front-part2'>
      <h2 className='front-part2-headline'>Testimonials</h2>
      <p className='front-part2-para'>Aur latest Reviews</p>
-     <div className='front-part2-cards'>
+       <div className='front-part2-cards'>
         <Cards1></Cards1>
        </div> 
      </div>

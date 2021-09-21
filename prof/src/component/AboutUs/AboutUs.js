@@ -35,7 +35,8 @@ const AboutUs = ()=>{
                                 <p>I have worked  on Front End part and Authentication part of this website</p>
                                 <ul>
                                     <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                                    
+                                    <li><i class="fa fa-github" aria-hidden="true" ></i></li>
                                 </ul>
                             </div>
                             
